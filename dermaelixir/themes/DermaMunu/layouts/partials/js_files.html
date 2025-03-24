@@ -1,0 +1,24 @@
+<!-- External script -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgwgIuDRkO7HlxvpWN-vPePnGVWss5r5g"></script>
+
+<!-- Local scripts using Hugo's asset pipeline -->
+<script src="{{ (resources.Get "js/google-map.js").RelPermalink }}"></script>
+
+<!-- inject:js -->
+<script src="{{ (resources.Get "js/vendors/modernizr-3.7.1.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/jquery-3.3.1.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/bootstrap.bundle.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/jquery.meanmenu.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/slick.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/jquery.event.move.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/jquery.twentytwenty.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/jquery.nice-select.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/jquery.countdown.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/jquery.ajaxchimp.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/jquery.fancybox.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/instafeed.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/jquery.nstslider.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/scrollspy.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/vendors/ScrollMagic.min.js").RelPermalink }}"></script>
+<script src="{{ (resources.Get "js/main.js").RelPermalink }}"></script>
+<!-- endinject -->

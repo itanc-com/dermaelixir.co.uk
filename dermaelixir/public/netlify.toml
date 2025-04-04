@@ -1,4 +1,5 @@
 [build]
+  base = "dermaelixir"
   publish = "public"
   command = "hugo"
 
@@ -9,6 +10,7 @@
 
 [context.production.environment]
   HUGO_ENV = "production"
+  HUGO_VERSION = "0.145.0"
 
 [context.deploy-preview]
   command = "hugo --buildDrafts --buildFuture"

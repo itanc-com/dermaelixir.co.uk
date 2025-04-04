@@ -1,4 +1,136 @@
-baseURL: https://dermaelixir.co.uk/
+baseURL: http://dermaelixir.co.uk/
 languageCode: en-us
 title: Derma Elixir
 theme: DermaMunu
+
+disableKinds: 
+  - "taxonomy"
+  - "term"
+
+disableHugoGeneratorInject: true
+
+menus:
+  main:
+    - identifier: "home"
+      name: Home
+      pageRef: /
+      weight: 10
+    - identifier: "treatments"
+      name: Treatments
+      pageRef: /treatments
+      weight: 20
+    - identifier: "gallery"
+      name: Gallery
+      pageRef: /gallery
+      weight: 30
+    - identifier: "aftercare"
+      name: Aftercare
+      pageRef: /aftercare
+      weight: 40 
+    - identifier: "about"
+      name: About
+      pageRef: /about
+      weight: 50
+    - identifier: "contact"
+      name: Contact
+      pageRef: /contact
+      weight: 60
+
+# Enable the use of assets (CSS, images, fonts) stored in the "assets" folder
+params:
+  assetsDir: "assets"
+  homeInfoParams:
+    Title: "Derma Elixir"
+    Subtitle: "Aesthetic Clinic"
+    Content: "Derma Elixir is a professional aesthetic clinic based in the ealing."
+  socialIcons:
+    - name: "facebook"
+      url: "https://www.facebook.com/"
+    - name: "instagram"
+      url: "https://www.instagram.com/"
+    - name: "twitter"
+      url: "https://twitter.com/"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/"
+  websiteLogo:
+    src: "logo.png"
+    alt: "Derma Elixir Logo"
+  websiteFavicon:
+    src: "favicon.png"
+    alt: "Derma Elixir Favicon"
+  websiteDescription: "Derma Elixir is a professional aesthetic clinic based in the ealing."
+  websiteKeywords: "aesthetic, clinic, ealing, derma, elixir"
+  websiteAuthor: "Derma Elixir"
+  websiteCopyright: "Derma Elixir"
+  websiteLanguage: "en"
+  websiteRobots: "index, follow"
+  websiteThemeColor: "#ffffff"
+  websiteTwitterCard: "summary"
+  websiteTwitterSite: "@DermaElixir"
+  websiteTwitterCreator: "@DermaElixir"
+  websiteOpenGraphType: "website"
+  websiteOpenGraphTitle: "Derma Elixir"
+  websiteOpenGraphDescription: "Derma Elixir is a professional aesthetic clinic based in the ealing."
+  websiteOpenGraphImage: "og-image.png"
+  websiteOpenGraphImageAlt: "Derma Elixir Open Graph Image"
+  websiteOpenGraphUrl: "https://dermaelixir.co.uk/"
+  websiteOpenGraphSiteName: "Derma Elixir"
+  websiteOpenGraphLocale: "en_US"
+  websiteOpenGraphArticleAuthor: "Derma Elixir"
+  websiteOpenGraphArticlePublisher: "Derma Elixir"
+  websiteOpenGraphArticleModifiedTime: "2021-01-01T00:00:00Z"
+  websiteOpenGraphArticlePublishedTime: "2021-01-01T00:00:00Z"
+  websiteOpenGraphArticleSection: "Aesthetic Clinic"
+  websiteOpenGraphArticleTag: "aesthetic, clinic, ealing, derma, elixir"
+  enableRobotsTXT: true
+  enableSitemapXML: true
+  enableGoogleAnalytics: false
+  googleAnalyticsTrackingID: "UA-123456789-1"
+
+  useHugoThemeComponents: true
+  useHugoThemeAssets: true
+  useHugoThemeData: true
+  useHugoThemeLayouts: true
+  useHugoThemeStatic: true  
+  showLanguageSwitcher: true
+  showSearchForm: true
+  showSocialIcons: true
+  showWebsiteLogo: true
+  showWebsiteFavicon: true
+  showWebsiteDescription: true
+  showWebsiteKeywords: true
+  showWebsiteAuthor: true
+  showWebsiteCopyright: true
+  showWebsiteLanguage: true
+  showWebsiteRobots: true
+
+
+# Add directories for fonts and images
+mediaTypes:
+  application/font-woff:
+    suffixes:
+      - "woff"
+  application/font-woff2:
+    suffixes:
+      - "woff2"
+  image/svg+xml:
+    suffixes:
+      - "svg"
+  image/jpeg:
+    suffixes:
+      - "jpeg"
+      - "jpg"
+  image/png:
+    suffixes:
+      - "png"
+  image/gif:
+    suffixes:
+      - "gif"
+
+outputFormats:
+  PNG:
+    mediaType: "image/png"
+    isPlainText: false
+  JPG:
+    mediaType: "image/jpeg"
+    isPlainText: false

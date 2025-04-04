@@ -5,16 +5,28 @@
 </head>
 <body>
   {{ partial "preloader.html" . }}
+  
   <header>
     {{ partial "header.html" . }}
   </header>
-  <h1>afsfaffsffasf</h1>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+
+  <!-- Wrapper -->
+  <div id="wrapper" class="wrapper">
+
+
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    <h1>afsfaffsffasf</h1>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+        <!-- {{ partial "footer.html" . }} -->
+        {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}    
+    </footer>
+
+  </div>
+  <!--// Wrapper -->
+
   {{ partial "js_files.html" . }}
 </body>
 </html>

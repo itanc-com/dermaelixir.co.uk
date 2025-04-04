@@ -1,18 +1,4 @@
-menus:
-  main:
-    - name: Home
-      pageRef: /
-      weight: 10
-    - name: Posts
-      pageRef: /posts
-      weight: 20
-    - name: Tags
-      pageRef: /tags
-      weight: 30
-    - name: About
-      pageRef: /about
-      weight: 40
-
+# This file is used to configure the theme when using Hugo.
 module:
   hugoVersion:
     extended: false
@@ -27,3 +13,5 @@ build:
   useResourceCacheWhen: fallback
   writeStats: false
   noJSConfigInAssets: false
+
+

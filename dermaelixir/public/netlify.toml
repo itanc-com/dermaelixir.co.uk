@@ -1,4 +1,5 @@
 [build]
+  base = "dermaelixir"
   publish = "public"
   command = "hugo"
 

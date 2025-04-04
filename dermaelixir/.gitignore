@@ -1,0 +1,28 @@
+# Hugo build output
+/public/
+/resources/_gen/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Node modules (if using npm or yarn)
+node_modules/
+
+# Logs
+*.log
+
+# Dependency directories
+/.hugo_build/
+
+# VS Code settings (optional)
+.vscode/
+
+# Netlify deploy folder (optional, if you generate it manually)
+.netlify/
+
+# Hugo cache
+hugo_stats.json
+
+# Backup files
+*~

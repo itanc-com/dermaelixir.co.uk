@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+  {{ if eq hugo.Environment "production" }}
+  {{ partial "gtag.html" . }}
+{{ end }}
+</head>
+<body>
+  {{ partial "body.html" . }}
+</body>
+</html>

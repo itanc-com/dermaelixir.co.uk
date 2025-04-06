@@ -84,8 +84,6 @@ params:
   websiteOpenGraphArticleTag: "aesthetic, clinic, ealing, derma, elixir"
   enableRobotsTXT: true
   enableSitemapXML: true
-  enableGoogleAnalytics: false
-  googleAnalyticsTrackingID: "UA-123456789-1"
 
   useHugoThemeComponents: true
   useHugoThemeAssets: true

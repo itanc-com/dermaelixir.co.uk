@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Derma Elixir</title>
-    <link>https://dermaelixir.co.uk/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on Derma Elixir</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://dermaelixir.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://dermaelixir.co.uk/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dermaelixir.co.uk/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://dermaelixir.co.uk/aftercare/</link>
+      <link>http://localhost:1313/aftercare/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dermaelixir.co.uk/aftercare/</guid>
+      <guid>http://localhost:1313/aftercare/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://dermaelixir.co.uk/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dermaelixir.co.uk/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://dermaelixir.co.uk/gallery/</link>
+      <link>http://localhost:1313/gallery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dermaelixir.co.uk/gallery/</guid>
+      <guid>http://localhost:1313/gallery/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://dermaelixir.co.uk/treatments/</link>
+      <link>http://localhost:1313/treatments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dermaelixir.co.uk/treatments/</guid>
+      <guid>http://localhost:1313/treatments/</guid>
       <description></description>
     </item>
   </channel>

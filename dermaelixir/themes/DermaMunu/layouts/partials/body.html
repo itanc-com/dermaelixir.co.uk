@@ -1,0 +1,25 @@
+{{ partial "preloader.html" . }}
+  
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+
+  <!-- Wrapper -->
+  <div id="wrapper" class="wrapper">
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    {{ if .IsHome }}
+    {{ partial "heroslider.html" . }}
+    {{ end }}
+
+    <main>
+      {{ .Content }}
+    </main>
+    <footer>
+        <!-- {{ partial "footer.html" . }} -->
+        {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}    
+    </footer>
+
+  </div>
+  <!--// Wrapper -->
+
+  {{ partial "js_files.html" . }}

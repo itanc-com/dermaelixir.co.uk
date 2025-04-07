@@ -1,5 +1,3 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
-
 
   <!-- Footer -->
   <div class="tm-footer">
@@ -12,21 +10,30 @@
         <div class="container">
             <div class="widgets widgets-footer row">
 
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div class="single-widget widget-info">
                         <a class="widget-info-logo" href="index.html"><img src="images/delx_ts_logo.png"
                                 alt="white logo"></a>
                         <p>Derma Elixir Clinic offers personalized, safe, and effective aesthetic treatments to enhance natural beauty, backed by certified expertise and a patient-centered approach.</p>
+                        <address>
+                            DERMA ELIXIR AESTHETICS LTD<br>
+                            <small>Company number 16336813</small><br>
+                            {{ .Site.Data.siteinfo.contact.address }}<br>
+                            Phone: {{ .Site.Data.siteinfo.contact.phone }}
+                        </address>
                         <ul>
-                            <li><a href="https://www.instagram.com/dermaelixir_aesthetics/"><i class="ti ti-instagram"></i></a></li>
-                            <li><a href="#"><i class="ti ti-twitter-alt"></i></a></li>
+                            <li><a href="https://www.instagram.com/{{ .Site.Data.siteinfo.contact.instagram }}/"><i class="ti ti-instagram"></i></a></li>
+                            <li>
+                                <a href="https://wa.me/{{ .Site.Data.siteinfo.contact.whatsapp }}?text=Hello%21%20I%20%E2%80%99m%20interested%20in%20learning%20more%20about%20DermaElixir%E2%80%99s%20treatments.%20Can%20you%20please%20provide%20more%20details%3F" title="whatsapp" target="_blank">
+                                   <i class="fab fa-whatsapp"></i></a>
+                            </li>
                             <li><a href="#"><i class="ti ti-pinterest"></i></a></li>
                             <li><a href="#"><i class="ti ti-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-12">
+                <!-- <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-widget widget-quicklinks">
                         <h4 class="widget-title">Quick Links</h4>
                         <ul>
@@ -38,32 +45,13 @@
                             <li><a href="#">Faqs</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- <div class="col-lg-3 col-md-6 col-12"> -->
-                    <!-- <div class="single-widget widget-recentpost-2">
-                        <h4 class="widget-title">Recent Posts</h4>
-                        <ul>
-                            <li>
-                                <h6><a href="#">Only 1 week of the year!</a></h6>
-                                <span><i class="ti ti-calendar"></i> April 08, 2019</span>
-                            </li>
-                            <li>
-                                <h6><a href="#">Best tips for munu beauty</a></h6>
-                                <span><i class="ti ti-calendar"></i> April 08, 2019</span>
-                            </li>
-                            <li>
-                                <h6><a href="#">Our favorite makeup tips</a></h6>
-                                <span><i class="ti ti-calendar"></i> April 08, 2019</span>
-                            </li>
-                        </ul>
-                    </div> -->
-                <!-- </div> -->
 
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div class="single-widget widget-hours">
                         <h4 class="widget-title">Opening Hours</h4>
-                        <p>We are open every day during these business hours. On Bank Holidays, visits are by appointment only.</p>
+                        <p>We are open every day during these business hours. On Bank Holidays, visits are possible by prior arrangement and subject to availability.</p>
                         <ul>
                             <li><span>Mon - Tue</span>: 9.00 AM - 18.00 PM</li>
                             <li><span>Wed - Fri</span>: 8.00 AM - 17.00 PM</li>
@@ -72,7 +60,7 @@
                         </ul>
                     </div>
                 </div>
-
+                
             </div>
         </div>
     </div>
@@ -82,6 +70,7 @@
             <div class="row align-items-center">
                 <div class="col-md-7">
                     <p class="tm-footer-copyright">Powered By ITANC © 2025</p>
+                    <p class="tm-footer-copyright">Copyright {{ now.Year }}. All rights reserved.</p>
                 </div>
                 <div class="col-md-5">
                     <div class="tm-footer-payment">

@@ -6,12 +6,23 @@
 {{- else }}
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
-
+<!-- Meta Description -->
+{{- with .Params.description -}}
+  <meta name="description" content="{{ . }}">
+{{- end }}
+<!-- Meta Keywords -->
+{{- with .Params.keywords -}}
+  <meta name="keywords" content="{{ delimit . ", " }}">
+{{- end }}
+<!-- Meta Author -->
+{{- with .Params.author -}}
+  <meta name="author" content="{{ . }}">
+{{- end }}
+{{- with .Params.author_website -}}
+  <link rel="author" href="{{ . }}">
+{{- end }}
 <link rel="apple-touch-icon" href="{{ (resources.Get "images/favicon.png").RelPermalink }}">
 <link rel="shortcut icon" href="{{ (resources.Get "images/favicon.ico").RelPermalink }}">
-
-<meta name="description" content="">
-
 <!-- inject:css -->
 <link rel="stylesheet" href="{{ (resources.Get "/css/vendors/bootstrap.min.css" | fingerprint).RelPermalink }}">
 <link rel="stylesheet" href="{{ (resources.Get "/css/vendors/meanmenu.min.css" | fingerprint).RelPermalink }}">
@@ -26,11 +37,7 @@
 <link rel="stylesheet" href="{{ (resources.Get "/css/vendors/jquery.fancybox.min.css" | fingerprint).RelPermalink }}">
 <link rel="stylesheet" href="{{ (resources.Get "/css/vendors/jquery.nstSlider.min.css" | fingerprint).RelPermalink }}">
 <link rel="stylesheet" href="{{ (resources.Get "/css/style.css" | fingerprint).RelPermalink }}">
-
-
 <!-- endinject -->
-
-
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<title>{{- if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}

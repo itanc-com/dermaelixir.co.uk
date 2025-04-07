@@ -1,0 +1,79 @@
+{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+{{- define "main" }}
+<div class="tm-breadcrumb-area tm-padding-section bg-grey" data-bgimage="/images/breadcrumb-bg.png" style="background-image: url(&quot;/images/breadcrumb-bg.png&quot;); margin-top: 131px;">
+    <div class="container">
+        <div class="tm-breadcrumb">
+            <h2>About DermaElixir</h2>
+            <ul>
+                <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+                <li>{{ .Title }} </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<main class="page-content pt-5">
+    <!-- About Area -->
+    <section id="tm-about-area" class="tm-section tm-about-area tm-padding-section bg-white"
+        data-bgimage="/images/about-bg-image.png" data-white-overlay="8">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8 col-md-9 col-12">
+                    <div class="tm-sectiontitle text-center">
+                        <h2>About Us</h2>
+                        <span class="tm-sectiontitle-divider">
+                            <img src="/images/section-divider-icon.png" alt="section divider">
+                        </span> 
+                    </div>
+                </div>
+            </div>
+            <div class="tm-about tm-scrollanim" data-bgimage="/images/about-block-background.png">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-8">
+                        <h3>Welcome to Derma Elixir – Where Beauty Meets Expertise.</h3>
+                       
+                        <p>At Derma Elixir, we are dedicated to enhancing your natural beauty through personalized,
+                            professional,
+                            and medically informed aesthetic care. Founded by Azin, a fully certified and insured
+                            aesthetic practitioner,
+                            our clinic brings together years of experience with training from some of the most
+                            prestigious academies in
+                            London.</p>
+
+                        <p>With a strong medical background and extensive expertise in dermatology and aesthetic
+                            procedures,
+                            Azin ensures that each treatment is safe, effective, and tailored to meet your individual
+                            needs.
+                            Our approach is rooted in professionalism, precision, and a deep commitment to client
+                            well-being.
+                        </p>
+
+
+                        <p>We believe that everyone deserves to feel confident and empowered in their own skin. That’s
+                            why our
+                            range of services is designed not just to enhance appearance, but to support your overall
+                            sense of self.
+                            At Derma Elixir, we combine the latest techniques in aesthetics with a compassionate,
+                            patient-centered
+                            philosophy to deliver exceptional results.
+                        </p>
+
+
+                        <p>Your journey to renewed confidence and radiance starts here. We strive to create a welcoming
+                            environment where you feel informed, supported, and truly cared for every step of the way.
+                        </p>
+
+
+                        <p>Thank you for choosing Derma Elixir. We look forward to being part of your aesthetic journey.
+                        </p>
+
+                        <a href="/#tm-contact-area" class="tm-button">for more info Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// About Area -->
+</main>
+
+{{end -}}

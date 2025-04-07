@@ -7,9 +7,12 @@
   <!-- Wrapper -->
   <div id="wrapper" class="wrapper">
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-    <h1>afsfaffsffasf</h1>
+    {{ if .IsHome }}
+    {{ partial "heroslider.html" . }}
+    {{ end }}
+
     <main>
-      {{ block "main" . }}{{ end }}
+      {{ .Content }}
     </main>
     <footer>
         <!-- {{ partial "footer.html" . }} -->

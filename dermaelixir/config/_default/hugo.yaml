@@ -1,4 +1,4 @@
-baseURL: http://dermaelixir.co.uk/
+baseURL: http://localhost:1313/
 languageCode: en-us
 title: Derma Elixir
 theme: DermaMunu
@@ -11,7 +11,7 @@ disableHugoGeneratorInject: true
 
 menus:
   main:
-    - identifier: "home"
+    - identifier: "index"
       name: Home
       pageRef: /
       weight: 10

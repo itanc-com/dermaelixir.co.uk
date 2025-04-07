@@ -1,0 +1,15 @@
+{{- block "body" . }}
+{{ partial "preloader.html" . }}
+  
+  <!-- Wrapper -->
+  <div id="wrapper" class="wrapper">
+    {{ partial "header.html" . }}
+    {{- block "main" . }}{{ end -}}
+    <footer>
+        <!-- {{ partial "footer.html" . }} -->
+        {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}    
+    </footer>
+  </div>
+  <!--// Wrapper -->
+  {{ partial "js_files.html" . }}
+  {{ end -}}

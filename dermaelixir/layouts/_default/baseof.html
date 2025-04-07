@@ -4,9 +4,9 @@
   {{ partial "head.html" . }}
   {{ if eq hugo.Environment "production" }}
   {{ partial "gtag.html" . }}
-{{ end }}
+  {{ end }}
 </head>
 <body>
-  {{ partial "body.html" . }}
+  {{- block "body" . }}{{ end -}}
 </body>
 </html>

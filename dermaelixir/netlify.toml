@@ -16,7 +16,7 @@
   command = "hugo --buildDrafts --buildFuture"
 
 [context.branch-deploy]
-  command = "hugo"
+  command = "hugo --environment production"
 
 [[redirects]]
   from = "/*"

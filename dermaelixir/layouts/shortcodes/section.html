@@ -1,0 +1,2 @@
+{{- $name := .Get 0 -}}
+{{- .Page.Scratch.Set $name (.Inner | markdownify) -}}

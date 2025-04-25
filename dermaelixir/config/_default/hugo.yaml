@@ -9,6 +9,10 @@ disableKinds:
 
 disableHugoGeneratorInject: true  # Disable the Hugo generator tag in the HTML head
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
  # Define the permalink structure
 permalinks:
